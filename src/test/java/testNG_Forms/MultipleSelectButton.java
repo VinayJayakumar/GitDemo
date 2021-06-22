@@ -16,6 +16,9 @@ public class MultipleSelectButton extends AbstractChromeWebDriver {
   @Test
   public void selectmethod() {
 	  
+	  System.out.println("First Checkin");
+	  System.out.println("Second Checkin");
+	  
 	  Webdriver.get("http://localhost:8080/pages/forms.html");
 	  sleep(2);
 	  WebElement SelectElement = Webdriver.findElement(By.name("selectElement1"));
