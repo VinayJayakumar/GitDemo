@@ -13,6 +13,8 @@ public class ChecknUnCheck extends AbstractChromeWebDriver {
   @Test
   public void Checkbox() {
 	  
+	  System.out.println("Second Checkin");
+	  
 	  Webdriver.get("http://localhost:8080/pages/forms.html");
 	  checkAcheckbox("inlineCheckboxElement1");
 	  checkAcheckbox("inlineCheckboxElement2");
