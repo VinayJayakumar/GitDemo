@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First Suite" verbose="1">
+	  
+	<test name="Suite1" parallel="true">
+		<packages>
+			<package name ="testNG_TestScripts.*"></package>
+		</packages>
+	</test> 
+	
+	<test name="ChromeSpecifictest">
+		<classes>
+			<class name ="testNG_TestScripts.MultiBrowserTest">
+			</class>
+			<parameter name ="browser" value="chrome">
+			</parameter>
+		</classes>
+	</test>
+	<test name="firefoxSpecifictest">
+		<classes>
+			<class name ="testNG_TestScripts.MultiBrowserTest">
+			</class>
+			<parameter name ="browser" value="firefox">
+			</parameter>
+		</classes>
+	</test>
+	<test name="IESpecifictest">
+		<classes>
+			<class name ="testNG_TestScripts.MultiBrowserTest">
+			</class>
+			<parameter name ="browser" value="IE">
+			</parameter>
+		</classes>
+	</test>
+	
+</suite>
